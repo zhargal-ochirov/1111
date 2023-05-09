@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Системой индефицирован пользователь {{result}}</h1>
+
+    <table border="2px">
+        <tr>
+            <th>Метод</th>
+            <th>TAR</th>
+            <th>FAR</th>
+            <th>FRR</th>
+            <th>TRR</th>
+
+        </tr>
+        <tr>
+        {% for a in far_frr_euc %}
+            <th>{{a}}</th>
+        {% endfor %}
+    </tr>
+        <tr>
+        {% for b in far_frr_manh %}
+            <th>{{b}}</th>
+        {% endfor %}
+    </tr>
+
+        <tr>
+        {% for c in far_frr_euc_freq %}
+            <th>{{c}}</th>
+        {% endfor %}
+    </tr>
+
+        <tr>
+        {% for d in far_frr_manh_freq %}
+            <th>{{d}}</th>
+        {% endfor %}
+    </tr>
+        <tr>
+        {% for f in far_frr_svm %}
+            <th>{{f}}</th>
+        {% endfor %}
+    </tr>
+    </table>
+</body>
+</html>

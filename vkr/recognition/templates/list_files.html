@@ -1,0 +1,10 @@
+
+{% block content %}
+    <h1>Список файлов</h1>
+    <ul>
+        {% for file in files %}
+            <li><a href="{{ file.file.url }}">{{ file.file.description }}</a></li>
+        <li><a href="{{ file.file.url }}">{{ file.file.path }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
